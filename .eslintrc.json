@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020, // Updated to support newer ECMAScript features
+    "sourceType": "module", // For using ES modules
+    "project": "./tsconfig.json" // Ensures ESLint recognizes your TypeScript configuration
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "no-console": "warn" // Custom rule to warn about console statements
+  }
+}
